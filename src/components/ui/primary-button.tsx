@@ -14,7 +14,7 @@ const PrimaryButton = ({
 		<Link
 			href={href}
 			className={cn(
-				"w-fit px-7 py-4 text-[18px] bg-black text-white shadow flex items-center gap-4 font-medium group",
+				"w-fit px-6 py-3 text-[16px] bg-black text-white shadow flex items-center gap-4 font-medium group",
 				className,
 			)}
 			{...props}
