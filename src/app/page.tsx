@@ -1,11 +1,11 @@
-import PrimaryButton from "@/components/ui/primary-button";
+import CustomLink from "@/components/ui/custom-link";
 
 export default function Home() {
 	return (
 		<main>
 			<h1>This is a title</h1>
 			<div className="p-52">
-				<PrimaryButton href="#">Simple Button</PrimaryButton>
+				<CustomLink href="#">Simple Button</CustomLink>
 			</div>
 		</main>
 	);
