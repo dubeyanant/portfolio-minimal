@@ -7,7 +7,7 @@ export interface LinkComponent
 	className?: string;
 }
 
-type LinkType = {
+export type LinkType = {
 	href: string;
 	text: string;
 	openInNewTab?: boolean;

@@ -1,4 +1,4 @@
-import type { BlogType, ProjectType } from "@/types";
+import type { BlogType, LinkType, ProjectType } from "@/types";
 
 export const PROJECTS: ProjectType[] = [
 	{
@@ -96,5 +96,36 @@ export const BLOGS: BlogType[] = [
 		date: "Nov 2024",
 		topic: "Machine Learning",
 		readTime: 5,
+	},
+];
+
+export const FOOTER_LINKS: LinkType[] = [
+	{
+		text: "GitHub",
+		href: "https://github.com/inclinedadarsh",
+		openInNewTab: true,
+	},
+	{
+		text: "Twitter",
+		href: "https://twitter.com/inclinedadarsh",
+		openInNewTab: true,
+	},
+	{
+		text: "LinkedIn",
+		href: "https://linkedin.com/in/dubeyadarsh",
+		openInNewTab: true,
+	},
+	{
+		text: "Reading List",
+		href: "https://readinglist.adarshdubey.com/",
+		openInNewTab: true,
+	},
+	{
+		text: "Talks",
+		href: "#",
+	},
+	{
+		text: "Corner",
+		href: "#",
 	},
 ];

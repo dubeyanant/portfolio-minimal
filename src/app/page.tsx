@@ -1,4 +1,5 @@
 import Blogs from "@/components/Blogs";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Newsletter from "@/components/Newsletter";
@@ -12,6 +13,7 @@ export default function Home() {
 			<Projects />
 			<Blogs />
 			<Newsletter />
+			<Footer />
 		</main>
 	);
 }
