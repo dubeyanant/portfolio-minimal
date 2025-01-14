@@ -19,7 +19,13 @@ const SectionTitle = ({
 			{...props}
 		>
 			<TitleH2>{title}</TitleH2>
-			<CustomLink href={link.href}>{link.text}</CustomLink>
+			<CustomLink
+				href={link.href}
+				target={link.openInNewTab ? "_blank" : "_self"}
+				rel={link.openInNewTab ? "noopener noreferrer" : ""}
+			>
+				{link.text}
+			</CustomLink>
 		</ViewContainer>
 	);
 };

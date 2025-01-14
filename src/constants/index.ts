@@ -1,4 +1,4 @@
-import type { ProjectType } from "@/types";
+import type { BlogType, ProjectType } from "@/types";
 
 export const PROJECTS: ProjectType[] = [
 	{
@@ -72,5 +72,29 @@ export const PROJECTS: ProjectType[] = [
 			"Vercel",
 			"Gen AI",
 		],
+	},
+];
+
+export const BLOGS: BlogType[] = [
+	{
+		blogTitle: "Place where I just gather stuff from the internet",
+		href: "#",
+		date: "Nov 2024",
+		topic: "Machine Learning",
+		readTime: 5,
+	},
+	{
+		blogTitle: "Place where I just gather stuff from the internet 1",
+		href: "#",
+		date: "Nov 2024",
+		topic: "Machine Learning",
+		readTime: 5,
+	},
+	{
+		blogTitle: "Place where I just gather stuff from the internet 2",
+		href: "#",
+		date: "Nov 2024",
+		topic: "Machine Learning",
+		readTime: 5,
 	},
 ];

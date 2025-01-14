@@ -7,29 +7,34 @@ export interface LinkComponent
 	className?: string;
 }
 
-export type NavLinkType = {
+type LinkType = {
 	href: string;
 	text: string;
 	openInNewTab?: boolean;
 };
 
+export type NavLinkType = LinkType;
+
 export interface SectionTitleProps extends GeneralComponent {
 	title: string;
-	link: {
-		href: string;
-		text: string;
-	};
+	link: LinkType;
 }
 
 export interface ProjectType {
 	projectTitle: string;
 	description: string;
-	links: {
-		text: string;
-		href: string;
-		openInNewTab?: boolean;
-	}[];
+	links: LinkType[];
 	technologies: string[];
 }
 
 export interface ProjectCardProps extends GeneralComponent, ProjectType {}
+
+export interface BlogType {
+	blogTitle: string;
+	href: string;
+	date: string;
+	topic: string;
+	readTime: number;
+}
+
+export interface BlogCardProps extends GeneralComponent, BlogType {}
