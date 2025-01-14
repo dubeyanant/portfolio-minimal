@@ -28,7 +28,7 @@ const BlogCard = ({
 				)}
 			>
 				<div className="grow ">
-					<TitleH3>{blogTitle}</TitleH3>
+					<TitleH3 className="font-light">{blogTitle}</TitleH3>
 					<div className="flex items-center gap-3 text-body">
 						<span className="">{date}</span>
 						<Asterisk size={18} />
