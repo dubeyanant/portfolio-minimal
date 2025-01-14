@@ -1,8 +1,6 @@
-import { chevronRight } from "@/assets";
 import { cn } from "@/lib/utils";
 import type { BlogCardProps } from "@/types";
 import { Asterisk } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import ChevronRight from "./ui/chevron-right";
 import TitleH3 from "./ui/title-h3";

@@ -1,8 +1,7 @@
-import { chevronRight } from "@/assets";
 import { cn } from "@/lib/utils";
 import type { LinkComponent } from "@/types";
-import Image from "next/image";
 import Link from "next/link";
+import ChevronRight from "./chevron-right";
 
 const PrimaryButton = ({
 	className,
@@ -22,11 +21,7 @@ const PrimaryButton = ({
 			<span className="group-hover:translate-x-1 transition-transform">
 				{children}
 			</span>
-			<Image
-				src={chevronRight}
-				alt="Chevron Right"
-				className="group-hover:-translate-x-1 transition-transform"
-			/>
+			<ChevronRight className="group-hover:-translate-x-1 transition-transform w-4 h-4" />
 		</Link>
 	);
 };
