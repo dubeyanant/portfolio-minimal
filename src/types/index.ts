@@ -20,3 +20,16 @@ export interface SectionTitleProps extends GeneralComponent {
 		text: string;
 	};
 }
+
+export interface ProjectType {
+	projectTitle: string;
+	description: string;
+	links: {
+		text: string;
+		href: string;
+		openInNewTab?: boolean;
+	}[];
+	technologies: string[];
+}
+
+export interface ProjectCardProps extends GeneralComponent, ProjectType {}
