@@ -12,7 +12,7 @@ const Newsletter = ({ className, ...props }: GeneralComponent) => {
 			className={cn("border-b border-border/10", className)}
 			{...props}
 		>
-			<ViewContainer>
+			<ViewContainer className="hover:bg-gray-50 transition-colors">
 				<TitleH2>Newsletter</TitleH2>
 				<p className="text-body mt-4">
 					I write about this and that, and also that other thing.

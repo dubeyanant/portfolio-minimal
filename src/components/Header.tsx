@@ -5,7 +5,7 @@ import { ViewContainer } from "./ui/view-container";
 const Header = () => {
 	return (
 		<header id="header" className="border-b border-border/10">
-			<ViewContainer className="space-y-7">
+			<ViewContainer className="space-y-7 hover:bg-gray-50 transition-colors">
 				<h1 className="text-3xl md:text-4xl lg:text-[46px] flex flex-col gap-3 font-serif text-">
 					<span className="font-light">Hi, I'm Adarsh 👋🏽</span>
 					<span className="font-normal title">

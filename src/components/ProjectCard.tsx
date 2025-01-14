@@ -14,7 +14,10 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
 	return (
 		<ViewContainer
-			className={cn("border-b border-border/10", className)}
+			className={cn(
+				"border-b border-border/10 hover:bg-gray-50 transition-colors",
+				className,
+			)}
 			{...props}
 		>
 			<div className="flex justify-between items-center">
