@@ -12,3 +12,11 @@ export type NavLinkType = {
 	text: string;
 	openInNewTab?: boolean;
 };
+
+export interface SectionTitleProps extends GeneralComponent {
+	title: string;
+	link: {
+		href: string;
+		text: string;
+	};
+}
