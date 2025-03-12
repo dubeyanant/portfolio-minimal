@@ -1,105 +1,117 @@
 import type { BlogType, LinkType, NavLinkType, ProjectType } from "@/types";
 import { STRINGS } from "./strings";
 
-export const nav_links: NavLinkType[] = [
-	{ text: STRINGS.NAV_LINK_PROJECTS, href: STRINGS.URL_PROJECTS },
-	{ text: STRINGS.NAV_LINK_BLOGS, href: STRINGS.URL_BLOGS },
-	{ text: STRINGS.NAV_LINK_NEWSLETTER, href: STRINGS.URL_NEWSLETTER },
+export const NAV_LINKS: NavLinkType[] = [
+	{ text: "Projects", href: "#projects" },
+	{ text: "Blogs", href: "#blogs" },
+	{ text: "Newsletter", href: "#newsletter" },
 	{
-		text: STRINGS.NAV_LINK_READING_LIST,
-		href: STRINGS.URL_READING_LIST,
+		text: "Reading List",
+		href: "https://readinglist.adarshdubey.com/",
 		openInNewTab: true,
 	},
 	{
-		text: STRINGS.NAV_LINK_LINKS,
-		href: STRINGS.URL_BENTO,
+		text: "Links",
+		href: "https://bento.me/adarsh",
 		openInNewTab: true,
 	},
-];
-
-// Common technologies array for reuse
-const COMMON_TECHNOLOGIES = [
-	STRINGS.TECH_NEXTJS,
-	STRINGS.TECH_TAILWIND,
-	STRINGS.TECH_TYPESCRIPT,
-	STRINGS.TECH_VERCEL,
-	STRINGS.TECH_GEN_AI,
 ];
 
 export const PROJECTS: ProjectType[] = [
 	{
-		projectTitle: STRINGS.PROJECT_TITLE_GOOD_DOMAIN,
+		projectTitle: "Good Domain",
 		links: [
 			{
-				text: STRINGS.LINK_LIVE,
-				href: STRINGS.URL_GOOD_DOMAIN,
+				text: "Live",
+				href: "https://gooddoma.in/",
 				openInNewTab: true,
 			},
 			{
-				text: STRINGS.LINK_GITHUB,
-				href: STRINGS.URL_GOOD_DOMAIN_GITHUB,
+				text: "GitHub",
+				href: "https://github.com/inclinedadarsh/gooddomain",
 				openInNewTab: true,
 			},
 		],
-		description: STRINGS.PROFILE_DESCRIPTION,
-		technologies: [...COMMON_TECHNOLOGIES],
+		description:
+			"My recent experience was working as a frontend/design engineer at Rocketium. Building components and layouts for AI flows within the product. Including the internal design system. Also, worked with GitHub as an frontend engineering intern. Worked on internal tools and landing pages with APAC and Latin region DevRel team.",
+		technologies: [
+			"NextJS",
+			"TailwindCSS",
+			"TypeScript",
+			"Vercel",
+			"Gen AI",
+		],
 	},
 	{
-		projectTitle: STRINGS.PROJECT_TITLE_INCLINET,
+		projectTitle: "Inclinet",
 		links: [
 			{
-				text: STRINGS.LINK_LIVE,
-				href: STRINGS.URL_GOOD_DOMAIN,
+				text: "Live",
+				href: "https://gooddoma.in/",
 				openInNewTab: true,
 			},
 			{
-				text: STRINGS.LINK_GITHUB,
-				href: STRINGS.URL_GOOD_DOMAIN_GITHUB,
+				text: "GitHub",
+				href: "https://github.com/inclinedadarsh/gooddomain",
 				openInNewTab: true,
 			},
 		],
-		description: STRINGS.PROFILE_DESCRIPTION,
-		technologies: [...COMMON_TECHNOLOGIES],
+		description:
+			"My recent experience was working as a frontend/design engineer at Rocketium. Building components and layouts for AI flows within the product. Including the internal design system. Also, worked with GitHub as an frontend engineering intern. Worked on internal tools and landing pages with APAC and Latin region DevRel team.",
+		technologies: [
+			"NextJS",
+			"TailwindCSS",
+			"TypeScript",
+			"Vercel",
+			"Gen AI",
+		],
 	},
 	{
-		projectTitle: STRINGS.PROJECT_TITLE_TIMELOOM,
+		projectTitle: "Timeloom",
 		links: [
 			{
-				text: STRINGS.LINK_LIVE,
-				href: STRINGS.URL_GOOD_DOMAIN,
+				text: "Live",
+				href: "https://gooddoma.in/",
 				openInNewTab: true,
 			},
 			{
-				text: STRINGS.LINK_GITHUB,
-				href: STRINGS.URL_GOOD_DOMAIN_GITHUB,
+				text: "GitHub",
+				href: "https://github.com/inclinedadarsh/gooddomain",
 				openInNewTab: true,
 			},
 		],
-		description: STRINGS.PROFILE_DESCRIPTION,
-		technologies: [...COMMON_TECHNOLOGIES],
+		description:
+			"My recent experience was working as a frontend/design engineer at Rocketium. Building components and layouts for AI flows within the product. Including the internal design system. Also, worked with GitHub as an frontend engineering intern. Worked on internal tools and landing pages with APAC and Latin region DevRel team.",
+		technologies: [
+			"NextJS",
+			"TailwindCSS",
+			"TypeScript",
+			"Vercel",
+			"Gen AI",
+		],
 	},
 ];
 
 export const BLOGS: BlogType[] = [
 	{
-		blogTitle: STRINGS.BLOG_TITLE_1,
+		blogTitle: "Place where I just gather stuff from the internet",
 		href: "#",
-		date: STRINGS.BLOG_DATE,
-		topic: STRINGS.BLOG_TOPIC,
+		date: "Nov 2024",
+		topic: "Machine Learning",
 		readTime: 5,
 	},
 	{
-		blogTitle: STRINGS.BLOG_TITLE_2,
+		blogTitle: "Place where I just gather stuff from the internet 1",
 		href: "#",
-		date: STRINGS.BLOG_DATE,
-		topic: STRINGS.BLOG_TOPIC,
+		date: "Nov 2024",
+		topic: "Machine Learning",
 		readTime: 5,
 	},
 	{
-		blogTitle: STRINGS.BLOG_TITLE_3,
+		blogTitle: "Place where I just gather stuff from the internet 2",
 		href: "#",
-		date: STRINGS.BLOG_DATE,
-		topic: STRINGS.BLOG_TOPIC,
+		date: "Nov 2024",
+		topic: "Machine Learning",
 		readTime: 5,
 	},
 ];
@@ -111,8 +123,8 @@ export const FOOTER_LINKS: LinkType[] = [
 		openInNewTab: true,
 	},
 	{
-		text: STRINGS.LINK_TWITTER,
-		href: STRINGS.URL_TWITTER_PROFILE,
+		text: STRINGS.LINK_X,
+		href: STRINGS.URL_X_PROFILE,
 		openInNewTab: true,
 	},
 	{
@@ -121,16 +133,16 @@ export const FOOTER_LINKS: LinkType[] = [
 		openInNewTab: true,
 	},
 	{
-		text: STRINGS.LINK_READING_LIST,
-		href: STRINGS.URL_READING_LIST,
+		text: "Reading List",
+		href: "https://readinglist.adarshdubey.com/",
 		openInNewTab: true,
 	},
 	{
-		text: STRINGS.LINK_TALKS,
+		text: "Talks",
 		href: "#",
 	},
 	{
-		text: STRINGS.LINK_CORNER,
+		text: "Corner",
 		href: "#",
 	},
 ];

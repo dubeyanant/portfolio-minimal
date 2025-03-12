@@ -1,4 +1,4 @@
-import { nav_links } from "@/constants";
+import { NAV_LINKS } from "@/constants";
 import { STRINGS } from "@/constants/strings";
 import { cn } from "@/lib/utils";
 import type { GeneralComponent } from "@/types";
@@ -17,7 +17,7 @@ const Navbar = ({ className, ...props }: GeneralComponent) => {
 					{STRINGS.LOGO_TEXT}
 				</span>
 				<ul className="">
-					{nav_links.map(link => (
+					{NAV_LINKS.map(link => (
 						<li key={link.text} className="inline-block mx-4">
 							<Link
 								href={link.href}

@@ -28,7 +28,7 @@ const Header = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{STRINGS.LINK_TWITTER}
+						{STRINGS.LINK_X}
 					</CustomLink>
 					<CustomLink
 						href={STRINGS.URL_LINKEDIN_PROFILE}
