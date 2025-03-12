@@ -8,12 +8,12 @@ import Projects from "@/components/Projects";
 export default function Home() {
 	return (
 		<main>
-			<Navbar />
+			{/* <Navbar /> */}
 			<Header />
-			<Projects />
-			<Blogs />
-			<Newsletter />
-			<Footer />
+			{/* <Projects /> */}
+			{/* <Blogs /> */}
+			{/* <Newsletter /> */}
+			{/* <Footer /> */}
 		</main>
 	);
 }

@@ -24,18 +24,18 @@ const Header = () => {
 						{STRINGS.LINK_GITHUB}
 					</CustomLink>
 					<CustomLink
-						href={STRINGS.URL_X_PROFILE}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{STRINGS.LINK_X}
-					</CustomLink>
-					<CustomLink
 						href={STRINGS.URL_LINKEDIN_PROFILE}
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						{STRINGS.LINK_LINKEDIN}
+					</CustomLink>
+					<CustomLink
+						href={STRINGS.URL_X_PROFILE}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{STRINGS.LINK_X}
 					</CustomLink>
 				</div>
 				<p className="text-body max-w-[700px] text-pretty">
