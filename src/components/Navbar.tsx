@@ -1,19 +1,9 @@
+import { nav_links } from "@/constants";
+import { STRINGS } from "@/constants/strings";
 import { cn } from "@/lib/utils";
-import type { GeneralComponent, NavLinkType } from "@/types";
+import type { GeneralComponent } from "@/types";
 import Link from "next/link";
 import { ViewContainer } from "./ui/view-container";
-
-const nav_links: NavLinkType[] = [
-	{ text: "Projects", href: "#projects" },
-	{ text: "Blogs", href: "#blogs" },
-	{ text: "Newsletter", href: "#newsletter" },
-	{
-		text: "Reading List",
-		href: "https://readinglist.adarshdubey.com",
-		openInNewTab: true,
-	},
-	{ text: "Links", href: "https://bento.me/adarsh", openInNewTab: true },
-];
 
 const Navbar = ({ className, ...props }: GeneralComponent) => {
 	return (
@@ -24,7 +14,7 @@ const Navbar = ({ className, ...props }: GeneralComponent) => {
 		>
 			<ViewContainer className="flex justify-between items-center lg:py-5">
 				<span className="font-serif font-semibold text-xl">
-					Adarsh.
+					{STRINGS.LOGO_TEXT}
 				</span>
 				<ul className="">
 					{nav_links.map(link => (

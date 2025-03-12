@@ -1,3 +1,4 @@
+import { STRINGS } from "@/constants/strings";
 import { cn } from "@/lib/utils";
 import type { BlogCardProps } from "@/types";
 import { Asterisk } from "lucide-react";
@@ -34,10 +35,11 @@ const BlogCard = ({
 						<Asterisk size={18} />
 						<span className="">{topic}</span>
 						<Asterisk size={18} />
-						<span className="">{readTime} minutes read</span>
+						<span className="">
+							{readTime} {STRINGS.BLOG_READ_TIME_SUFFIX}
+						</span>
 					</div>
 				</div>
-				{/* <Image src={chevronRight} alt="Chevron Right" className="text-black" fill="#000" /> */}
 				<ChevronRight className="h-6 w-6" />
 			</ViewContainer>
 		</Link>

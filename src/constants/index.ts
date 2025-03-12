@@ -1,131 +1,136 @@
-import type { BlogType, LinkType, ProjectType } from "@/types";
+import type { BlogType, LinkType, NavLinkType, ProjectType } from "@/types";
+import { STRINGS } from "./strings";
+
+export const nav_links: NavLinkType[] = [
+	{ text: STRINGS.NAV_LINK_PROJECTS, href: STRINGS.URL_PROJECTS },
+	{ text: STRINGS.NAV_LINK_BLOGS, href: STRINGS.URL_BLOGS },
+	{ text: STRINGS.NAV_LINK_NEWSLETTER, href: STRINGS.URL_NEWSLETTER },
+	{
+		text: STRINGS.NAV_LINK_READING_LIST,
+		href: STRINGS.URL_READING_LIST,
+		openInNewTab: true,
+	},
+	{
+		text: STRINGS.NAV_LINK_LINKS,
+		href: STRINGS.URL_BENTO,
+		openInNewTab: true,
+	},
+];
+
+// Common technologies array for reuse
+const COMMON_TECHNOLOGIES = [
+	STRINGS.TECH_NEXTJS,
+	STRINGS.TECH_TAILWIND,
+	STRINGS.TECH_TYPESCRIPT,
+	STRINGS.TECH_VERCEL,
+	STRINGS.TECH_GEN_AI,
+];
 
 export const PROJECTS: ProjectType[] = [
 	{
-		projectTitle: "Good Domain",
+		projectTitle: STRINGS.PROJECT_TITLE_GOOD_DOMAIN,
 		links: [
 			{
-				text: "Live",
-				href: "https://gooddoma.in/",
+				text: STRINGS.LINK_LIVE,
+				href: STRINGS.URL_GOOD_DOMAIN,
 				openInNewTab: true,
 			},
 			{
-				text: "GitHub",
-				href: "https://github.com/inclinedadarsh/gooddomain",
+				text: STRINGS.LINK_GITHUB,
+				href: STRINGS.URL_GOOD_DOMAIN_GITHUB,
 				openInNewTab: true,
 			},
 		],
-		description:
-			"My recent experience was working as a frontend/design engineer at Rocketium. Building components and layouts for AI flows within the product. Including the internal design system. Also, worked with GitHub as an frontend engineering intern. Worked on internal tools and landing pages with APAC and Latin region DevRel team.",
-		technologies: [
-			"NextJS",
-			"TailwindCSS",
-			"TypeScript",
-			"Vercel",
-			"Gen AI",
-		],
+		description: STRINGS.PROFILE_DESCRIPTION,
+		technologies: [...COMMON_TECHNOLOGIES],
 	},
 	{
-		projectTitle: "Inclinet",
+		projectTitle: STRINGS.PROJECT_TITLE_INCLINET,
 		links: [
 			{
-				text: "Live",
-				href: "https://gooddoma.in/",
+				text: STRINGS.LINK_LIVE,
+				href: STRINGS.URL_GOOD_DOMAIN,
 				openInNewTab: true,
 			},
 			{
-				text: "GitHub",
-				href: "https://github.com/inclinedadarsh/gooddomain",
+				text: STRINGS.LINK_GITHUB,
+				href: STRINGS.URL_GOOD_DOMAIN_GITHUB,
 				openInNewTab: true,
 			},
 		],
-		description:
-			"My recent experience was working as a frontend/design engineer at Rocketium. Building components and layouts for AI flows within the product. Including the internal design system. Also, worked with GitHub as an frontend engineering intern. Worked on internal tools and landing pages with APAC and Latin region DevRel team.",
-		technologies: [
-			"NextJS",
-			"TailwindCSS",
-			"TypeScript",
-			"Vercel",
-			"Gen AI",
-		],
+		description: STRINGS.PROFILE_DESCRIPTION,
+		technologies: [...COMMON_TECHNOLOGIES],
 	},
 	{
-		projectTitle: "Timeloom",
+		projectTitle: STRINGS.PROJECT_TITLE_TIMELOOM,
 		links: [
 			{
-				text: "Live",
-				href: "https://gooddoma.in/",
+				text: STRINGS.LINK_LIVE,
+				href: STRINGS.URL_GOOD_DOMAIN,
 				openInNewTab: true,
 			},
 			{
-				text: "GitHub",
-				href: "https://github.com/inclinedadarsh/gooddomain",
+				text: STRINGS.LINK_GITHUB,
+				href: STRINGS.URL_GOOD_DOMAIN_GITHUB,
 				openInNewTab: true,
 			},
 		],
-		description:
-			"My recent experience was working as a frontend/design engineer at Rocketium. Building components and layouts for AI flows within the product. Including the internal design system. Also, worked with GitHub as an frontend engineering intern. Worked on internal tools and landing pages with APAC and Latin region DevRel team.",
-		technologies: [
-			"NextJS",
-			"TailwindCSS",
-			"TypeScript",
-			"Vercel",
-			"Gen AI",
-		],
+		description: STRINGS.PROFILE_DESCRIPTION,
+		technologies: [...COMMON_TECHNOLOGIES],
 	},
 ];
 
 export const BLOGS: BlogType[] = [
 	{
-		blogTitle: "Place where I just gather stuff from the internet",
+		blogTitle: STRINGS.BLOG_TITLE_1,
 		href: "#",
-		date: "Nov 2024",
-		topic: "Machine Learning",
+		date: STRINGS.BLOG_DATE,
+		topic: STRINGS.BLOG_TOPIC,
 		readTime: 5,
 	},
 	{
-		blogTitle: "Place where I just gather stuff from the internet 1",
+		blogTitle: STRINGS.BLOG_TITLE_2,
 		href: "#",
-		date: "Nov 2024",
-		topic: "Machine Learning",
+		date: STRINGS.BLOG_DATE,
+		topic: STRINGS.BLOG_TOPIC,
 		readTime: 5,
 	},
 	{
-		blogTitle: "Place where I just gather stuff from the internet 2",
+		blogTitle: STRINGS.BLOG_TITLE_3,
 		href: "#",
-		date: "Nov 2024",
-		topic: "Machine Learning",
+		date: STRINGS.BLOG_DATE,
+		topic: STRINGS.BLOG_TOPIC,
 		readTime: 5,
 	},
 ];
 
 export const FOOTER_LINKS: LinkType[] = [
 	{
-		text: "GitHub",
-		href: "https://github.com/inclinedadarsh",
+		text: STRINGS.LINK_GITHUB,
+		href: STRINGS.URL_GITHUB_PROFILE,
 		openInNewTab: true,
 	},
 	{
-		text: "Twitter",
-		href: "https://twitter.com/inclinedadarsh",
+		text: STRINGS.LINK_TWITTER,
+		href: STRINGS.URL_TWITTER_PROFILE,
 		openInNewTab: true,
 	},
 	{
-		text: "LinkedIn",
-		href: "https://linkedin.com/in/dubeyadarsh",
+		text: STRINGS.LINK_LINKEDIN,
+		href: STRINGS.URL_LINKEDIN_PROFILE,
 		openInNewTab: true,
 	},
 	{
-		text: "Reading List",
-		href: "https://readinglist.adarshdubey.com/",
+		text: STRINGS.LINK_READING_LIST,
+		href: STRINGS.URL_READING_LIST,
 		openInNewTab: true,
 	},
 	{
-		text: "Talks",
+		text: STRINGS.LINK_TALKS,
 		href: "#",
 	},
 	{
-		text: "Corner",
+		text: STRINGS.LINK_CORNER,
 		href: "#",
 	},
 ];

@@ -1,3 +1,4 @@
+import { STRINGS } from "@/constants/strings";
 import { cn } from "@/lib/utils";
 import type { GeneralComponent } from "@/types";
 import React from "react";
@@ -13,12 +14,13 @@ const Newsletter = ({ className, ...props }: GeneralComponent) => {
 			{...props}
 		>
 			<ViewContainer className="hover:bg-gray-50 transition-colors">
-				<TitleH2>Newsletter</TitleH2>
+				<TitleH2>{STRINGS.NEWSLETTER_TITLE}</TitleH2>
 				<p className="text-body mt-4">
-					I write about this and that, and also that other thing.
-					Newsletter is published every week.
+					{STRINGS.NEWSLETTER_DESCRIPTION}
 				</p>
-				<PrimaryButton className="mt-7">Subscribe</PrimaryButton>
+				<PrimaryButton className="mt-7">
+					{STRINGS.NEWSLETTER_SUBSCRIBE_BUTTON}
+				</PrimaryButton>
 			</ViewContainer>
 		</section>
 	);
