@@ -1,4 +1,5 @@
 import { FOOTER_LINKS } from "@/constants";
+import { STRINGS } from "@/constants/strings";
 import { cn } from "@/lib/utils";
 import type { GeneralComponent } from "@/types";
 import CustomLink from "./ui/custom-link";
@@ -21,7 +22,9 @@ const Footer = ({ className, ...props }: GeneralComponent) => {
 				))}
 			</ViewContainer>
 			<ViewContainer className="hover:bg-gray-50 transition-colors">
-				<TitleH2 className="text-center">Thank You.</TitleH2>
+				<TitleH2 className="text-center">
+					{STRINGS.FOOTER_SECTION_TITLE}
+				</TitleH2>
 			</ViewContainer>
 		</footer>
 	);

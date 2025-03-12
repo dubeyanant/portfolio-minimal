@@ -1,4 +1,39 @@
-import type { BlogType, LinkType, ProjectType } from "@/types";
+import type { BlogType, LinkType, NavLinkType, ProjectType } from "@/types";
+import { STRINGS } from "./strings";
+
+export const NAV_LINKS: NavLinkType[] = [
+	{ text: "Projects", href: "#projects" },
+	{ text: "Blogs", href: "#blogs" },
+	{ text: "Newsletter", href: "#newsletter" },
+	{
+		text: "Reading List",
+		href: "https://readinglist.adarshdubey.com/",
+		openInNewTab: true,
+	},
+	{
+		text: "Links",
+		href: "https://bento.me/adarsh",
+		openInNewTab: true,
+	},
+];
+
+export const HEADER_LINKS: LinkType[] = [
+	{
+		text: STRINGS.LINK_GITHUB,
+		href: STRINGS.URL_GITHUB_PROFILE,
+		openInNewTab: true,
+	},
+	{
+		text: STRINGS.LINK_X,
+		href: STRINGS.URL_X_PROFILE,
+		openInNewTab: true,
+	},
+	{
+		text: STRINGS.LINK_LINKEDIN,
+		href: STRINGS.URL_LINKEDIN_PROFILE,
+		openInNewTab: true,
+	},
+];
 
 export const PROJECTS: ProjectType[] = [
 	{
@@ -101,18 +136,18 @@ export const BLOGS: BlogType[] = [
 
 export const FOOTER_LINKS: LinkType[] = [
 	{
-		text: "GitHub",
-		href: "https://github.com/inclinedadarsh",
+		text: STRINGS.LINK_GITHUB,
+		href: STRINGS.URL_GITHUB_PROFILE,
 		openInNewTab: true,
 	},
 	{
-		text: "Twitter",
-		href: "https://twitter.com/inclinedadarsh",
+		text: STRINGS.LINK_X,
+		href: STRINGS.URL_X_PROFILE,
 		openInNewTab: true,
 	},
 	{
-		text: "LinkedIn",
-		href: "https://linkedin.com/in/dubeyadarsh",
+		text: STRINGS.LINK_LINKEDIN,
+		href: STRINGS.URL_LINKEDIN_PROFILE,
 		openInNewTab: true,
 	},
 	{

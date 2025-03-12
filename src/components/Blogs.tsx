@@ -1,4 +1,5 @@
 import { BLOGS } from "@/constants";
+import { STRINGS } from "@/constants/strings";
 import { cn } from "@/lib/utils";
 import type { GeneralComponent } from "@/types";
 import BlogCard from "./BlogCard";
@@ -12,10 +13,10 @@ const Blogs = ({ className, ...props }: GeneralComponent) => {
 			{...props}
 		>
 			<SectionTitle
-				title="Blogs"
+				title={STRINGS.BLOGS_SECTION_TITLE}
 				link={{
-					href: "https://blog.adarshdubey.com",
-					text: "All Blogs",
+					href: STRINGS.BLOGS_ALL_BLOGS_URL,
+					text: STRINGS.BLOGS_ALL_BLOGS_TEXT,
 					openInNewTab: true,
 				}}
 			/>
