@@ -17,6 +17,24 @@ export const NAV_LINKS: NavLinkType[] = [
 	},
 ];
 
+export const HEADER_LINKS: LinkType[] = [
+	{
+		text: STRINGS.LINK_GITHUB,
+		href: STRINGS.URL_GITHUB_PROFILE,
+		openInNewTab: true,
+	},
+	{
+		text: STRINGS.LINK_LINKEDIN,
+		href: STRINGS.URL_LINKEDIN_PROFILE,
+		openInNewTab: true,
+	},
+	{
+		text: STRINGS.LINK_X,
+		href: STRINGS.URL_X_PROFILE,
+		openInNewTab: true,
+	},
+];
+
 export const PROJECTS: ProjectType[] = [
 	{
 		projectTitle: "Good Domain",
