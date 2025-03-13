@@ -2,17 +2,17 @@ import type { BlogType, LinkType, NavLinkType, ProjectType } from "@/types";
 import { STRINGS } from "./strings";
 
 export const NAV_LINKS: NavLinkType[] = [
-	{ text: "Projects", href: "#projects" },
-	{ text: "Blogs", href: "#blogs" },
-	{ text: "Newsletter", href: "#newsletter" },
-	{
-		text: "Reading List",
-		href: "https://readinglist.adarshdubey.com/",
-		openInNewTab: true,
-	},
+	//   { text: "Projects", href: "#projects" },
+	//   { text: "Blogs", href: "#blogs" },
+	//   { text: "Newsletter", href: "#newsletter" },
+	//   {
+	//     text: "Reading List",
+	//     href: "https://readinglist.adarshdubey.com/",
+	//     openInNewTab: true,
+	//   },
 	{
 		text: "Links",
-		href: "https://bento.me/adarsh",
+		href: "https://bio.link/aanant",
 		openInNewTab: true,
 	},
 ];
@@ -112,24 +112,25 @@ export const PROJECTS: ProjectType[] = [
 
 export const BLOGS: BlogType[] = [
 	{
-		blogTitle: "Place where I just gather stuff from the internet",
-		href: "#",
-		date: "Nov 2024",
-		topic: "Machine Learning",
+		blogTitle: "Creating pinned shortcuts in Flutter!",
+		href: "https://tech.anantdubey.com/pinned-shortcuts-in-flutter",
+		date: "Mar 2024",
+		topic: "Flutter • Android",
 		readTime: 5,
 	},
 	{
-		blogTitle: "Place where I just gather stuff from the internet 1",
-		href: "#",
-		date: "Nov 2024",
-		topic: "Machine Learning",
-		readTime: 5,
+		blogTitle:
+			"On going beyond infinity, imperfections & collective responsibilities",
+		href: "https://anantdubey.substack.com/p/inb1",
+		date: "Jul 2024",
+		topic: "Philosophy • Literature • Economics",
+		readTime: 3,
 	},
 	{
-		blogTitle: "Place where I just gather stuff from the internet 2",
-		href: "#",
-		date: "Nov 2024",
-		topic: "Machine Learning",
+		blogTitle: "The Divinity and Her Servants",
+		href: "https://medium.com/@dubeyanant/the-divinity-and-her-servants-8c33e80bdf69",
+		date: "Jun 2023",
+		topic: "Romance • Fiction",
 		readTime: 5,
 	},
 ];
@@ -141,26 +142,26 @@ export const FOOTER_LINKS: LinkType[] = [
 		openInNewTab: true,
 	},
 	{
-		text: STRINGS.LINK_X,
-		href: STRINGS.URL_X_PROFILE,
-		openInNewTab: true,
-	},
-	{
 		text: STRINGS.LINK_LINKEDIN,
 		href: STRINGS.URL_LINKEDIN_PROFILE,
 		openInNewTab: true,
 	},
 	{
-		text: "Reading List",
-		href: "https://readinglist.adarshdubey.com/",
+		text: STRINGS.LINK_X,
+		href: STRINGS.URL_X_PROFILE,
 		openInNewTab: true,
 	},
-	{
-		text: "Talks",
-		href: "#",
-	},
-	{
-		text: "Corner",
-		href: "#",
-	},
+	//   {
+	//     text: "Reading List",
+	//     href: "https://readinglist.adarshdubey.com/",
+	//     openInNewTab: true,
+	//   },
+	//   {
+	//     text: "Talks",
+	//     href: "#",
+	//   },
+	//   {
+	//     text: "Corner",
+	//     href: "#",
+	//   },
 ];

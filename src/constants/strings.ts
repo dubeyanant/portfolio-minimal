@@ -4,7 +4,7 @@ export const STRINGS = {
 
 	// Header content
 	HEADER_GREETING: "Hi, I'm Anant 👋🏽",
-	HEADER_TITLE: "Web & App Developer",
+	HEADER_TITLE: "App & Web Developer",
 	HEADER_CONNECT_BUTTON: "Connect with me",
 
 	// Social media links
@@ -20,18 +20,18 @@ export const STRINGS = {
 
 	// Profile description
 	PROFILE_DESCRIPTION:
-		"I'm a frontend developer working on Flutter apps and web technologies. Passionate about crafting user-friendly interfaces and solving performance challenges.",
+		"I'm a frontend developer working on for example, but not restricted to Flutter and React. Passionate about crafting user-friendly interfaces and solving performance challenges. I love tackling complex problems and finding elegant solutions.",
 
 	// Blogs section
 	BLOGS_SECTION_TITLE: "Blogs",
-	BLOGS_ALL_BLOGS_TEXT: "All Blogs",
-	BLOGS_ALL_BLOGS_URL: "https://blog.anant.dev",
+	BLOGS_ALL_BLOGS_TEXT: "All Blogs + 🍱",
+	BLOGS_BENTO_URL: "https://bento.me/aanant",
 	BLOG_READ_TIME_SUFFIX: "minutes read",
 
 	// Newsletter section
 	NEWSLETTER_TITLE: "Newsletter",
 	NEWSLETTER_DESCRIPTION:
-		"I share insights on frontend development, writing, and storytelling. Subscribe for weekly updates!",
+		"I share insights on frontend development, writing, and storytelling. Subscribe for updates!",
 	NEWSLETTER_SUBSCRIBE_BUTTON: "Subscribe",
 
 	// Footer section

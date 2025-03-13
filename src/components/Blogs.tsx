@@ -15,7 +15,7 @@ const Blogs = ({ className, ...props }: GeneralComponent) => {
 			<SectionTitle
 				title={STRINGS.BLOGS_SECTION_TITLE}
 				link={{
-					href: STRINGS.BLOGS_ALL_BLOGS_URL,
+					href: STRINGS.BLOGS_BENTO_URL,
 					text: STRINGS.BLOGS_ALL_BLOGS_TEXT,
 					openInNewTab: true,
 				}}
