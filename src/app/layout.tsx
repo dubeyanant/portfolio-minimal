@@ -17,34 +17,41 @@ const jetbrainsMono = JetBrains_Mono({
 	subsets: ["latin"],
 });
 
+const SITE_TITLE = "Anant Dubey | Front-End Developer";
+const SITE_DESCRIPTION =
+	"Explore Anant's portfolio showcasing expertise in front-end development, Flutter app development, UI/UX design, and performance optimization. Check out innovative projects, technical blogs, and creative solutions.";
+const SITE_KEYWORDS =
+	"Front-End Developer, Flutter Developer, UI/UX Design, Web Development, Mobile App Development, JavaScript, React, Next.js, Portfolio, Anant";
+const AUTHOR_NAME = "Anant";
+const SITE_URL = "https://www.anantdubey.com/";
+const OG_IMAGE_URL = "https://www.anantdubey.com/opengraph-image.jpg";
+const OG_IMAGE_ALT = "Anant's Portfolio Preview";
+const TWITTER_CARD_TYPE = "summary_large_image";
+
 export const metadata: Metadata = {
-	title: "Anant Dubey | Front-End Developer",
-	description:
-		"Explore Anant's portfolio showcasing expertise in front-end development, Flutter app development, UI/UX design, and performance optimization. Check out innovative projects, technical blogs, and creative solutions.",
-	keywords:
-		"Front-End Developer, Flutter Developer, UI/UX Design, Web Development, Mobile App Development, JavaScript, React, Next.js, Portfolio, Anant",
-	authors: [{ name: "Anant", url: "https://www.anantdubey.com/" }],
+	title: SITE_TITLE,
+	description: SITE_DESCRIPTION,
+	keywords: SITE_KEYWORDS,
+	authors: [{ name: AUTHOR_NAME, url: SITE_URL }],
 	openGraph: {
-		title: "Anant Dubey | Front-End Developer",
-		description:
-			"Discover Anant's portfolio featuring cutting-edge front-end and mobile app development projects, UI/UX design insights, and technical expertise.",
-		url: "https://www.anantdubey.com/",
+		title: SITE_TITLE,
+		description: SITE_DESCRIPTION,
+		url: SITE_URL,
 		type: "website",
 		images: [
 			{
-				url: "https://www.anantdubey.com/opengraph-image.jpg",
+				url: OG_IMAGE_URL,
 				width: 1200,
 				height: 630,
-				alt: "Anant's Portfolio Preview",
+				alt: OG_IMAGE_ALT,
 			},
 		],
 	},
 	twitter: {
-		card: "summary_large_image",
-		title: "Anant Dubey | Front-End Developer",
-		description:
-			"Explore Anant's work in front-end and mobile app development, UI/UX design, and performance optimization.",
-		images: ["https://www.anantdubey.com/opengraph-image.jpg"],
+		card: TWITTER_CARD_TYPE,
+		title: SITE_TITLE,
+		description: SITE_DESCRIPTION,
+		images: [OG_IMAGE_URL],
 	},
 };
 

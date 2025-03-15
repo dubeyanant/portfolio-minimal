@@ -21,7 +21,7 @@ export const STRINGS = {
 
 	// Profile description
 	PROFILE_DESCRIPTION:
-		"I'm a frontend developer working on for example, but not restricted to Flutter and React. Passionate about crafting user-friendly interfaces and solving performance challenges. I love tackling complex problems and finding elegant solutions.",
+		"I'm a front-end developer specializing in Flutter and React, among other technologies. Passionate about creating user-friendly interfaces and optimizing performance, I enjoy tackling complex problems and crafting elegant solutions.",
 
 	// Blogs section
 	BLOGS_SECTION_TITLE: "Blogs",
