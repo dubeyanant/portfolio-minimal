@@ -8,6 +8,7 @@ export const STRINGS = {
 	HEADER_CONNECT_BUTTON: "Connect with me",
 
 	// Social media links
+	LINKS: "Links",
 	LINK_GITHUB: "GitHub",
 	LINK_X: "Twitter",
 	LINK_LINKEDIN: "LinkedIn",

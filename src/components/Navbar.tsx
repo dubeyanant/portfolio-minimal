@@ -16,9 +16,17 @@ const Navbar = ({ className, ...props }: GeneralComponent) => {
 				<span className="font-serif font-semibold text-xl">
 					{STRINGS.LOGO_TEXT}
 				</span>
-				<ul className="">
+				<ul className="flex gap-8">
 					{NAV_LINKS.map(link => (
-						<li key={link.text} className="inline-block mx-4">
+						<li
+							key={link.text}
+							className={cn(
+								"hidden md:block",
+								link.text === STRINGS.LINKS
+									? "block"
+									: "hidden",
+							)}
+						>
 							<Link
 								href={link.href}
 								target={link.openInNewTab ? "_blank" : "_self"}

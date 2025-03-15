@@ -17,7 +17,7 @@ const Header = () => {
 					</span>
 				</h1>
 
-				<div className="flex items-center gap-4">
+				<div className="flex items-center gap-4 flex-wrap">
 					{HEADER_LINKS.map(({ text, href, openInNewTab }) => (
 						<CustomLink
 							key={href}

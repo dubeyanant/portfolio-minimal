@@ -24,13 +24,15 @@ const BlogCard = ({
 		>
 			<ViewContainer
 				className={cn(
-					"border-b border-border/10 hover:bg-gray-50 hover:px-12 transition-all flex items-center",
+					"border-b border-border/10 hover:bg-gray-50 hover:px-6 md:hover:px-12 transition-all flex items-center gap-4 hover:gap-0",
 					className,
 				)}
 			>
 				<div className="grow ">
-					<TitleH3 className="font-light">{blogTitle}</TitleH3>
-					<div className="flex items-center gap-3 text-body">
+					<TitleH3 className="font-light leading-tight">
+						{blogTitle}
+					</TitleH3>
+					<div className="flex items-center gap-x-3 text-body flex-wrap mt-3">
 						<span className="">{date}</span>
 						<Asterisk size={18} />
 						<span className="">{topic}</span>
@@ -40,7 +42,7 @@ const BlogCard = ({
 						</span>
 					</div>
 				</div>
-				<ChevronRight className="h-6 w-6" />
+				<ChevronRight className="h-4 md:h-6 w-6" />
 			</ViewContainer>
 		</Link>
 	);

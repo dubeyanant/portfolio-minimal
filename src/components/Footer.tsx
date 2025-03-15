@@ -9,7 +9,7 @@ import { ViewContainer } from "./ui/view-container";
 const Footer = ({ className, ...props }: GeneralComponent) => {
 	return (
 		<footer id="footer" className={cn("", className)} {...props}>
-			<ViewContainer className="border-b border-border/10 flex justify-center gap-5 items-center hover:bg-gray-50 transition-colors">
+			<ViewContainer className="border-b border-border/10 flex justify-center gap-5 items-center hover:bg-gray-50 transition-colors flex-wrap">
 				{FOOTER_LINKS.map(link => (
 					<CustomLink
 						href={link.href}
