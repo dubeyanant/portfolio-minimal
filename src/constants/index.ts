@@ -98,4 +98,9 @@ export const FOOTER_LINKS: LinkType[] = [
 		href: STRINGS.URL_X_PROFILE,
 		openInNewTab: true,
 	},
+	{
+		text: "Play Store",
+		href: "https://play.google.com/store/apps/dev?id=5300715465790168807",
+		openInNewTab: true,
+	},
 ];
