@@ -2,7 +2,7 @@ import type { BlogType, LinkType, NavLinkType, ProjectType } from "@/types";
 import { STRINGS } from "./strings";
 
 export const NAV_LINKS: NavLinkType[] = [
-	//   { text: "Projects", href: "#projects" },
+	{ text: "Projects", href: "#projects" },
 	{ text: "Blogs", href: "#blogs" },
 	{ text: "Newsletter", href: "#newsletter" },
 	{
@@ -32,32 +32,51 @@ export const HEADER_LINKS: LinkType[] = [
 
 export const PROJECTS: ProjectType[] = [
 	{
-		projectTitle: "Good Domain",
+		projectTitle: "My People",
 		links: [
 			{
-				text: "Live",
-				href: "https://gooddoma.in/",
+				text: "In Closed Alpha",
+				href: "https://play.google.com/apps/testing/com.infiniteants.mypeople",
 				openInNewTab: true,
 			},
 			{
 				text: "GitHub",
-				href: "https://github.com/inclinedadarsh/gooddomain",
+				href: "https://github.com/dubeyanant/my_people",
 				openInNewTab: true,
 			},
 		],
 		description:
-			"My recent experience was working as a frontend/design engineer at Rocketium. Building components and layouts for AI flows within the product. Including the internal design system. Also, worked with GitHub as an frontend engineering intern. Worked on internal tools and landing pages with APAC and Latin region DevRel team.",
-		technologies: [
-			"NextJS",
-			"TailwindCSS",
-			"TypeScript",
-			"Vercel",
-			"Gen AI",
+			"My People is a personal contact management app designed to help you remember and organize important details about the people in your life. Unlike standard contact apps, My People lets you store custom notes, preferences, and key information for each person—ensuring you never forget what matters.",
+		technologies: ["Flutter", "Gen AI"],
+	},
+	{
+		projectTitle: "Link List",
+		links: [
+			{
+				text: "Live",
+				href: "https://linklist.anant.ink/",
+				openInNewTab: true,
+			},
+			{
+				text: "GitHub",
+				href: "https://github.com/dubeyanant/link-list",
+				openInNewTab: true,
+			},
 		],
+		description:
+			"This is a Next.js web app using Supabase for real-time updates. Users can create a list, share it with others, and allow them to add their names. The list updates instantly and is automatically deleted after 7 days.",
+		technologies: ["NextJS", "Typescript", "Supabase"],
 	},
 ];
 
 export const BLOGS: BlogType[] = [
+	{
+		blogTitle: "Why I Use Supabase for MVPs (and beyond)",
+		href: "https://tech.anantdubey.com/why-i-use-supabase",
+		date: "Mar 2025",
+		topic: "Supabase • NextJS",
+		readTime: 5,
+	},
 	{
 		blogTitle: "Creating pinned shortcuts in Flutter!",
 		href: "https://tech.anantdubey.com/pinned-shortcuts-in-flutter",
@@ -66,19 +85,11 @@ export const BLOGS: BlogType[] = [
 		readTime: 5,
 	},
 	{
-		blogTitle:
-			"On going beyond infinity, imperfections & collective responsibilities",
-		href: "https://anantdubey.substack.com/p/inb1",
-		date: "Jul 2024",
-		topic: "Philosophy • Literature • Economics",
-		readTime: 3,
-	},
-	{
-		blogTitle: "The Divinity and Her Servants",
-		href: "https://medium.com/@dubeyanant/the-divinity-and-her-servants-8c33e80bdf69",
-		date: "Jun 2023",
-		topic: "Romance • Fiction",
-		readTime: 5,
+		blogTitle: "Native Bridge between Flutter and Android",
+		href: "https://tech.anantdubey.com/native-bridge",
+		date: "Mar 2024",
+		topic: "Flutter • Android",
+		readTime: 4,
 	},
 ];
 
