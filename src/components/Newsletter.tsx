@@ -19,7 +19,7 @@ const Newsletter = ({ className, ...props }: GeneralComponent) => {
 				</p>
 				<PrimaryButton
 					className="mt-7"
-					href={STRINGS.BLOGS_BENTO_URL}
+					href={STRINGS.BLOGS_SUB}
 					target="_blank"
 				>
 					{STRINGS.NEWSLETTER_SUBSCRIBE_BUTTON}

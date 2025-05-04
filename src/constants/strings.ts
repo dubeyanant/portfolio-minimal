@@ -25,8 +25,9 @@ export const STRINGS = {
 
 	// Blogs section
 	BLOGS_SECTION_TITLE: "Blogs",
-	BLOGS_ALL_BLOGS_TEXT: "All Blogs + 🍱",
-	BLOGS_BENTO_URL: "https://bento.me/aanant",
+	BLOGS_ALL_BLOGS_TEXT: "All Blogs",
+	BLOGS_URL: "https://tech.anantdubey.com/?source=top_nav_blog_home",
+	BLOGS_SUB: "https://tech.anantdubey.com/newsletter",
 	BLOG_READ_TIME_SUFFIX: "minutes read",
 
 	// Newsletter section

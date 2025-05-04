@@ -14,7 +14,7 @@ const Projects = ({ className, ...props }: GeneralComponent) => {
 			<SectionTitle
 				title="Projects"
 				link={{
-					href: "/projects",
+					href: "/",
 					text: "All Projects",
 				}}
 			/>
